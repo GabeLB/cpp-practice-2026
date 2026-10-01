@@ -1,7 +1,9 @@
 // Задача 2. «Уникальные пути»
 // Тема: 2D ДП, оптимизация памяти.
 
-// Условие: Робот стоит в левом верхнем углу сетки m × n. Он может двигаться только вправо или вниз. Сколько существует уникальных путей до правого нижнего угла?
+// Условие: Робот стоит в левом верхнем углу сетки m × n.
+// Он может двигаться только вправо или вниз.
+// Сколько существует уникальных путей до правого нижнего угла?
 
 // Примеры:
 // m = 3, n = 7  → 28
@@ -52,13 +54,13 @@ int uniquePathsOptimized(int m, int n) {
 }
 
 void runTests() {
-    assert(uniquePaths(3, 7) == 28);
-    assert(uniquePaths(3, 2) == 3);
-    assert(uniquePaths(3, 3) == 6);
-    assert(uniquePaths(1, 1) == 1);
-    assert(uniquePaths(1, 5) == 1);
-    assert(uniquePaths(5, 1) == 1);
-    assert(uniquePaths(4, 4) == 20);
+    assert(uniquePathsOptimized(3, 7) == 28);
+    assert(uniquePathsOptimized(3, 2) == 3);
+    assert(uniquePathsOptimized(3, 3) == 6);
+    assert(uniquePathsOptimized(1, 1) == 1);
+    assert(uniquePathsOptimized(1, 5) == 1);
+    assert(uniquePathsOptimized(5, 1) == 1);
+    assert(uniquePathsOptimized(4, 4) == 20);
 
     // Проверка, что оптимизированная версия даёт тот же ответ
     for (int m = 1; m <= 8; m++) {
